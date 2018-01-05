@@ -1,0 +1,1019 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700italic,700,900,900italic);
+
+@font-face {
+    font-family: MuseoSans;
+    src: url(../fonts/MuseoSans.otf);
+}
+
+@font-face {
+    font-family: MuseoSans-100;
+    src: url(../fonts/MuseoSans-100.otf);
+}
+
+@font-face {
+    font-family: MuseoSans-300;
+    src: url(../fonts/MuseoSans-300.otf);
+}
+
+@font-face {
+    font-family: MuseoSans_1;
+    src: url(../fonts/MuseoSans_1.otf);
+}
+
+body {
+    color: #333;
+    background: #e5e5e5;
+    font-family: "Calibri", "Helvetica", "Trebuchet MS", "Arial", "Verdana", "sans-serif";
+    font-size: 11pt;
+    line-height: 18pt;
+}
+
+a:link, a:hover, a:active, a:visited {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1.style-01 {
+    color: #092f2e;
+}
+
+h1.style-02 {
+    color: #fff;
+}
+
+h2.style-01 {
+    color: #fff;
+}
+
+h2.style-02 {
+    color: #6e6e6e;
+}
+
+h2.style-03 {
+    color: #dc661f;
+}
+
+h4.style-01 {
+    color: #dc661f;
+}
+
+p.style-01 {
+    color: #fff;
+    font-size: 14pt;
+}
+
+a:link.style-01, a:visited.style-01, a:active.style-01 {
+    color: #fff;
+    font-size: 14pt;
+}
+
+.container-general {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 120px;
+    overflow: hidden;
+    transition: 1s all;
+}
+
+.container-main {
+    background: #f2f2f2;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #e5e5e5;
+    z-index: 999;
+}
+
+header .top {
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+}
+
+@media (max-width: 991px) {
+    header {
+        left: -100%;
+        height: 100%;
+        background: #b6b6b6;
+    }
+
+    header .top {
+        padding-left: 0;
+        padding-right: 0;
+        background: none;
+    }
+
+    .container-general {
+        top: 0;
+    }
+}
+
+header .logo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+header .logo img {
+    max-height: 70px;
+}
+
+@media (max-width: 991px) {
+    .logo {
+        padding-bottom: 15px;
+    }
+
+    .logo img {
+        margin: auto;
+    }
+}
+
+header nav {
+    padding-top: 45px;
+}
+
+header nav > ul {
+    padding: 0;
+    margin: 0;
+    float: right;
+    display: inline;
+}
+
+header nav > ul > li {
+    display: inline;
+    list-style: none;
+}
+
+header nav > ul > li > a:link, header nav > ul > li > a:active, header nav > ul > li > a:visited {
+    color: #6e6e6e;
+    font-size: 18pt;
+    text-decoration: none;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header nav > ul > li:last-child > a:link, header nav > ul > li:last-child > a:active, header nav > ul > li:last-child > a:visited {
+    padding-right: 0;
+}
+
+header nav > ul > li > a:hover {
+    color: #d9681d;
+}
+
+header nav > ul > li > a.active {
+    color: #6e6e6e !important;
+}
+
+header nav > ul li .div-border {
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 14px;
+    display: inline;
+}
+
+header nav > ul li.active .div-border,
+header nav > ul li a.active .div-border,
+header nav > ul li:hover .div-border {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
+    background: rgb(238, 238, 238); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#cccccc', GradientType=0); /* IE6-9 */
+}
+
+header .btn-responsive-menu {
+    display: none;
+    z-index: 4;
+}
+
+header .btn-responsive-menu-col {
+    display: none;
+    z-index: 4;
+}
+
+header .btn-responsive-menu.type-01 {
+    width: 50px;
+    height: 50px;
+    margin-top: 18px;
+    float: right;
+    background: url("../img/nav-menu.PNG") no-repeat center center;
+}
+
+header .btn-responsive-menu.type-02 {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    background: #1f1f1f url("../img/nav-menu.PNG") no-repeat center center;
+    border-radius: 4px;
+    opacity: 0.5;
+}
+
+header .btn-responsive-menu.type-02:hover {
+    opacity: 1.0;
+}
+
+@media (max-width: 991px) {
+    header nav {
+        padding-top: 0;
+    }
+
+    header nav > ul {
+        float: none;
+        display: block;
+    }
+
+    header nav > ul li {
+        display: block;
+    }
+
+    header nav > ul li a:link, header nav > ul li a:active, header nav > ul li a:visited {
+        padding-top: 5px;
+        padding-right: 0;
+        padding-bottom: 5px;
+        padding-left: 0;
+        display: block;
+    }
+
+    header .btn-responsive-menu {
+        display: block;
+    }
+
+    header .btn-responsive-menu-col {
+        display: block;
+    }
+
+    header nav > ul li .div-border {
+        padding-bottom: 0;
+        border-bottom: none;
+        display: block;
+    }
+
+    header nav > ul li.active .div-border,
+    header nav > ul li:hover .div-border {
+        border-bottom: none;
+    }
+}
+
+input[type='text'], select {
+}
+
+input, select, textarea {
+    border-radius: 0 !important;
+}
+
+.logos {
+}
+
+.logos img {
+    max-width: 80%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: 1s all;
+}
+
+.logos img:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.slider-block-02 .captions-content .captions-content-btn {
+    background: #fff !important;
+}
+
+.anim-slide .text01 *, .anim-slide .text02 *, .anim-slide .text03 * {
+    position: static;
+}
+
+.anim-slide .text01 {
+    width: 50%;
+    left: 100px;
+    padding-left: 25px;
+    line-height: 34pt;
+    background: url('../img/detail-banner-home.PNG') no-repeat left top;
+    z-index: 3;
+}
+
+.anim-slide .text01 .text-style-01 {
+    color: #ffff;
+    font-size: 28pt;
+    text-shadow: 1px 1px 0px #1d5b7e;
+}
+
+.anim-slider {
+    height: 500px;
+}
+
+.anim-slider .img-bg {
+    left: 50%;
+    margin: auto;
+    z-index: 1;
+}
+
+@media (max-width: 1920px) {
+    .anim-slider .img-bg {
+        width: 1920px;
+        margin-left: -960px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .anim-slider .img-bg {
+        width: 1366px;
+        margin-left: -683px;
+        bottom: -300px;
+    }
+}
+
+@media (max-width: 991px) {
+    .anim-slider .img-bg {
+        width: 1000px;
+        margin-left: -500px;
+        bottom: inherit;
+    }
+}
+
+.anim-slide .block-content {
+    width: 1000px;
+    height: 100%;
+    left: 50%;
+    margin: auto;
+    margin-left: -500px;
+    box-sizing: padding-box;
+    z-index: 2;
+}
+
+.anim-slide .block-content a:link {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 4 !important;
+}
+
+@media (max-width: 991px) {
+    .anim-slide .block-content {
+        width: inherit;
+        left: 0%;
+        margin-left: inherit;
+    }
+}
+
+@media (max-width: 791px) {
+    .anim-slider {
+        height: 300px;
+    }
+
+    .anim-slide .block-content {
+        /*position: static;*/
+    }
+
+    .anim-slide .text01 {
+        width: 100%;
+        left: 15px;
+        padding: 15px !important;
+        background: none;
+    }
+
+    .anim-slide .text01 .text-style-01 {
+        font-size: 18pt;
+        line-height: normal;
+    }
+
+    .anim-slide .text01 .text-style-02 {
+        font-size: 14pt;
+    }
+}
+
+.banner-pages {
+}
+
+.banner-pages .bg-container {
+}
+
+.banner-pages .text01 *, .banner-pages .text02 *, .banner-pages .text03 * {
+    position: static;
+}
+
+.banner-pages .text01 {
+}
+
+.banner-pages .text01 .text-style-01 {
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px #1d5b7e;
+    font-size: 28pt;
+    line-height: 28pt;
+    margin-bottom: 25px;
+}
+
+.banner-pages .text01 .text-style-02 {
+    color: #fff;
+    font-size: 18pt;
+}
+
+.banner-pages .text02 .text-style-01 {
+    color: #fff;
+    font-size: 28pt;
+    line-height: 28pt;
+    margin-bottom: 25px;
+}
+
+.banner-pages .text02 .text-style-02 {
+    color: #fff;
+    font-size: 24pt;
+}
+
+@media (max-width: 791px) {
+    .banner-pages .text01 .text-style-01 {
+        font-size: 24pt;
+        line-height: 24pt;
+    }
+
+    .banner-pages .bg-container {
+        height: auto;
+    }
+
+    .banner-pages .text01, .banner-pages .text02 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.bg-container-style-01 {
+    background: url('../img/banners/banner_01.JPG') center center;
+}
+
+@media (max-width: 1920px) {
+    .bg-container-style-01 {
+        background-size: 1920px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .bg-container-style-01 {
+        background-size: 1366px;
+    }
+}
+
+@media (max-width: 991px) {
+    .bg-container-style-01 {
+        background-size: 1000px;
+    }
+}
+
+.dropdown-menu a {
+    padding: 10px !important;
+}
+
+.btn-site {
+    color: #fff;
+    width: 100%;
+    display: block;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0e4943+0,1d2b2b+100 */
+    background: rgb(14,73,67); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(14,73,67,1) 0%, rgba(29,43,43,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(14,73,67,1) 0%,rgba(29,43,43,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(14,73,67,1) 0%,rgba(29,43,43,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e4943', endColorstr='#1d2b2b',GradientType=0 ); /* IE6-9 */
+}
+
+.btn-site:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#627d4d+0,1f3b08+100;Olive+3D */
+    background: rgb(98,125,77); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(98,125,77,1) 0%,rgba(31,59,8,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(98,125,77,1) 0%,rgba(31,59,8,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08',GradientType=0 ); /* IE6-9 */
+}
+
+.accordion {
+}
+
+.accordion h3 a {
+    color: #534741;
+    padding-left: 25px;
+    background: url('../img/arrow-01.PNG') 5px center no-repeat;
+    text-decoration: inherit !important;
+}
+
+.accordion h3 a:hover, .accordion h3 a:active, .accordion h3 a:visited {
+    color: #80c4b4;
+}
+
+.branches * {
+    color: #fff;
+}
+
+.theme-type-style-01 {
+    background: url('../img/bg-02.JPG');
+    overflow: hidden;
+}
+
+@media (max-width: 1920px) {
+    .theme-type-style-01 .img-bg {
+        background-size: 1920px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .theme-type-style-01 .img-bg {
+        background-size: 1366px;
+    }
+}
+
+@media (max-width: 991px) {
+    .theme-type-style-01 .img-bg {
+        background-size: 1000px;
+    }
+}
+
+.theme-type-style-02 {
+    background: #092f2e;
+}
+
+
+.theme-type-style-03 {
+    background: #86888c;
+}
+
+@media (max-width: 991px) {
+    .theme-type-style-02 {
+    }
+}
+
+.icon-cel {
+    width: 22px;
+    height: 33px;
+    margin-right: 10px;
+    background: url("../img/phone-icon.PNG");
+    float: left;
+    display: block;
+}
+
+.icon-email {
+    width: 23px;
+    height: 15px;
+    margin-right: 10px;
+    background: url("../img/email-icon.PNG");
+    float: left;
+    display: block;
+}
+
+.footer-contacts {
+    color: #000;
+    font-size: 12pt;
+}
+
+.icon-phone {
+    width: 22px;
+    height: 33px;
+    margin-right: 10px;
+    background: url("../img/phone-icon.PNG");
+    float: left;
+    display: block;
+}
+
+.h1-detail {
+    width: 8px;
+    height: 40px;
+    background: #a2c02f;
+    margin-right: 20px;
+    display: block;
+    float: left;
+}
+
+.response-error {
+    padding: 15px;
+    background: #ffeeee;
+    border-left: 5px solid #aa0000;
+}
+
+.response-success {
+    padding: 15px;
+    background: #e3f2e2;
+    border-left: 5px solid #85d87d;
+}
+
+/* Animações */
+
+.infos-tag {
+    color: #3f90ae;
+    border: 2px solid #3f90ae;
+    background: #f3f3f3;
+    border-radius: 100%;
+}
+
+.infos-tag .title {
+    color: #fff;
+    font-size: 18pt;
+    padding: 15px 25px 15px 25px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#109b4e+0,016f32+100 */
+    background: #109b4e; /* Old browsers */
+    background: -moz-linear-gradient(left, #109b4e 0%, #016f32 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #109b4e 0%, #016f32 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #109b4e 0%, #016f32 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#109b4e', endColorstr='#016f32', GradientType=1); /* IE6-9 */
+    border-radius: 10px 0 10px 0;
+    display: table;
+}
+
+.img-clients {
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.top-contacts {
+}
+
+@media (max-width: 991px) {
+    .top-contacts {
+        display: none;
+    }
+}
+
+.form_contact {
+}
+
+.form_contact input, .form_contact textarea, .form_contact select {
+    color: #1a7dae;
+    background: #fff;
+}
+
+::-webkit-input-placeholder {
+    color: #666666 !important;
+}
+
+:-moz-placeholder {
+    color: #666666 !important;
+}
+
+::-moz-placeholder {
+    color: #666666 !important;
+}
+
+:-ms-input-placeholder {
+    color: #666666 !important;
+}
+
+.fb-page,
+.fb-page span,
+.fb-page span iframe[style] {
+    width: 100% !important;
+}
+
+.list-site-01 {
+    margin: 0;
+    padding: 0;
+}
+
+.list-site-01 li {
+    color: #fff;
+    line-height: 13px;
+    display: block;
+    list-style: none;
+    padding-left: 15px;
+    padding-bottom: 11px;
+    margin-bottom: 10px;
+    background: url('../img/arrow-01.PNG') no-repeat;
+    border-bottom: 1px solid #333;
+}
+
+.list-site-01 li:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.list-site-02 {
+    margin: 0;
+    padding: 0;
+}
+
+.list-site-02 li {
+    color: #fff;
+    line-height: 13px;
+    display: block;
+    list-style: none;
+    padding-left: 15px;
+    padding-bottom: 11px;
+    margin-bottom: 10px;
+    background: url('../img/arrow-02.PNG') no-repeat;
+}
+
+.list-site-02 li:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.list-default {
+    margin: 0;
+    padding: 0;
+}
+
+.list-default li {
+    display: block;
+    list-style: none;
+}
+
+.list-default li img {
+    margin-right: 15px;
+}
+
+.links-languages {
+    margin-top: 23px;
+}
+
+.gallery {
+    overflow: hidden;
+}
+
+.gallery .thumb {
+    width: 25%;
+    height: 250px;
+    float: left;
+    overflow: hidden;
+    box-sizing: padding-box;
+}
+
+.gallery .thumb:first-child {
+    padding-left: 0;
+}
+
+.gallery .thumb:last-child {
+    padding-right: 0;
+}
+
+.gallery .thumb-content {
+    height: 100%;
+    background-size: 500px;
+    background-repeat: ne-resize;
+    background-position: center;
+    background-color: #333;
+    z-index: 1;
+}
+
+.gallery .thumb a:link {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: block;
+    background: rgba(126, 64, 78, 0.9);
+    float: left;
+    opacity: 0.0;
+    transition: all 1s;
+    z-index: 2;
+}
+
+.gallery .thumb a:hover {
+    opacity: 1.0;
+}
+
+@media (max-width: 991px) {
+    .gallery .thumb {
+        width: 50%;
+    }
+}
+
+@media (max-width: 591px) {
+    .gallery .thumb {
+        width: 100%;
+    }
+}
+
+.gallery-2 {
+    overflow: hidden;
+}
+
+.gallery-2 .thumb {
+    width: 33.3%;
+    height: 250px;
+    padding: 2px;
+    float: left;
+    overflow: hidden;
+    box-sizing: padding-box;
+}
+
+.gallery-2 .thumb:first-child {
+    padding-left: 0;
+}
+
+.gallery-2 .thumb:last-child {
+    padding-right: 0;
+}
+
+.gallery-2 .thumb-content {
+    height: 100%;
+    background-size: 500px;
+    background-repeat: ne-resize;
+    background-position: center;
+    background-color: #333;
+    z-index: 1;
+}
+
+.gallery-2 .thumb a:link {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: block;
+    /*background: rgba(52, 152, 219, 0.5) url('../img/icon-glass.PNG') center center no-repeat;*/
+    background: rgba(126, 64, 78, 0.9);
+    float: left;
+    opacity: 0.0;
+    transition: all 1s;
+    z-index: 2;
+}
+
+.gallery-2 .thumb a:hover {
+    opacity: 1.0;
+}
+
+@media (max-width: 991px) {
+    .gallery-2 .thumb {
+        width: 50%;
+    }
+}
+
+@media (max-width: 591px) {
+    .gallery-2 .thumb {
+        width: 100%;
+    }
+}
+
+.bx-wrapper {
+    margin: 0 auto 50px !important;
+}
+
+.bx-viewport {
+    height: auto !important;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #333 !important;
+    /*border: 2px solid #d9d9d9 !important;*/
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100% !important;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #012734 !important;
+    /*border: 2px solid #3f90ae !important;*/
+}
+
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    /*bottom: -40px !important;*/
+}
+
+.highlights-home {
+    color: #646464;
+    font-size: 16pt;
+}
+
+.contacts-footer {
+    font-size: 24pt;
+}
+
+.contacts-footer img {
+    max-height: 25px;
+}
+
+.social-icons-footer {
+}
+
+.social-icons-footer img {
+    max-height: 50px;
+}
+
+.box-event {
+    padding: 15px;
+    background: #e5e5e5;
+    border: 1px solid #1D2B2B;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+.btn-box-event {
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0e4943+0,1d2b2b+100 */
+    background: rgb(14,73,67); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(14,73,67,1) 0%, rgba(29,43,43,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(14,73,67,1) 0%,rgba(29,43,43,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(14,73,67,1) 0%,rgba(29,43,43,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e4943', endColorstr='#1d2b2b',GradientType=0 ); /* IE6-9 */
+}
+
+.btn-box-event a {
+    color: #fff;
+    font-size: 18pt;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.news-home {
+    color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.news-home, .news-home a {
+    color: #333;
+    font-size: 16pt;
+}
+
+.news-home .photo-block {
+    height: 155px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.news-home .photo-block a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.news-home .news-home-title {
+    font-size: 18pt;
+    color: #333;
+}
+
+.news-home p {
+    font-size: 14pt;
+    color: #333;
+}
+
+.news-home .news-nav-container {
+    overflow: hidden;
+}
+
+.news-home .news-nav-container-2 {
+    max-width: 1000px;
+    float: left;
+    position: relative;
+}
+
+.news-home .news-nav-block {
+    position: relative;
+    left: 0;
+    overflow: hidden;
+}
+
+.news-home .news-nav-article {
+    max-width: 33.3%;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+
+.news-home .arrows-container {}
+
+@media (max-width: 991px) {
+    .news-home .arrows-container {
+        width: 100px;
+        margin: auto;
+        position: relative;
+    }
+}
+
+.bg-grey {
+    color: #333;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 4px;
+    background-color: #eee;
+    overflow: hidden;
+}

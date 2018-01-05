@@ -1,0 +1,7 @@
+.container {
+    max-width: 1000px !important;
+}
+
+input,textarea,select {
+    /*border: 0 !important;*/
+}

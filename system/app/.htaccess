@@ -1,0 +1,7 @@
+Header set Access-Control-Allow-Origin *
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule    ^$    webroot/    [L]
+    RewriteRule    (.*) webroot/$1    [L]
+</IfModule>

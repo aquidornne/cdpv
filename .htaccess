@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^site$ index.php
+RewriteRule ^fale_conosco$ contact.php
+RewriteRule ^eventos$ events.php
+RewriteRule ^evento$ event_by_id.php
+RewriteRule ^evento/([^/]*)/([^/]*)$ event_by_id.php?id=$1&title=$2 [L]
+
+RewriteRule ^site/([^/]*)$ index.php?success=$1 [L]
